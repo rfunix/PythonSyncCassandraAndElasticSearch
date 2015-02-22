@@ -32,10 +32,13 @@ def cassReturnTableUpdate(tableName, tableUpdateTime):
 
 
 def cassDelete(tableName, id):
-    cluster = getCluster()
-    query = "DELETE from {0} where id = {1};".format(tableName, id)
-    session = cluster.connect('syncdb')
-    session.execute(query)
+    try:
+        cluster = getCluster()
+        query = "DELETE from {0} where id = {1};".format(tableName, id)
+        session = cluster.connect('syncdb')
+        session.execute(query)
+    except Exception, e:
+        pass
 
 
 def insertCassandra(tableName, data):
@@ -55,7 +58,6 @@ def insertCassandra(tableName, data):
                 value = "'{0}'".format(value)
         query = "{0} {1},".format(query, value)
     query = re.sub(r",(?=$)", ")", query)
-    print query
     session.execute(query)
 
 

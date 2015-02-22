@@ -44,9 +44,9 @@ def Syncdb():
             dataTableInsert = returnDataTableInsert(cassDataTable, esDataTable)
             updateData(dataTableInsert, table.name_table)
             run = False
-            print "+++++++++++++++ End Sync +++++++++++++++"
         except Exception, e:
             traceback.print_exc()
+    print "+++++++++++++++ End Sync +++++++++++++++"
 
 
 def updateData(data, tableName):
