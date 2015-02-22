@@ -1,7 +1,9 @@
 # Teste Simbiose
 
 Python 2.7.6
+
 Cassandra 2.1.2
+
 ElasticSearch 1.4.4
 
 Dependências: pip install cassandra-driver
