@@ -1,13 +1,16 @@
+# Teste Simbiose
+
 Python 2.7.6
 Cassandra 2.1.2
 ElasticSearch 1.4.4
 
 Dependências: pip install cassandra-driver
 
+## Screenshot
 
-[IMG]http://i62.tinypic.com/23nx2r.png[/IMG]
+![](http://i62.tinypic.com/23nx2r.png)
 
-Como funciona:
+## Como funciona:
 
 1 - Criar no cassandra um keyspace chamado syncdb
 
