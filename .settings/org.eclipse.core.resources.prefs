@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//Infra/CrossCutting/functions.py=utf-8
+encoding//Infra/Data/cassandaRep.py=utf-8
+encoding//Infra/Data/esRep.py=utf-8
+encoding//Service/core.py=utf-8
+encoding/sync.py=utf-8
