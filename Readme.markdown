@@ -8,6 +8,8 @@ ElasticSearch 1.4.4
 
 Dependências: pip install cassandra-driver
 
+Cassandra e ElasticSearch devem estar rodando local(localhost) e na porta default.
+
 ## Screenshot
 
 ![](http://i62.tinypic.com/23nx2r.png)
